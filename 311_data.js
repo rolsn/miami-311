@@ -1,7 +1,7 @@
-Rows = new Mongo.Collection("tests");
+Rows = new Mongo.Collection("311data");
 
 if (Meteor.isClient) {
-    Meteor.subscribe("tests");
+    Meteor.subscribe("311data");
 
     var removeUnderscores = function(name) {
         return name === null ? "" : Spacebars.SafeString(name.replace(/_/g, " "))
