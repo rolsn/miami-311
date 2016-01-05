@@ -1,0 +1,13 @@
+<head>
+  <title>meteor-graph-test</title>
+</head>
+
+<body>
+    {{> reactive_table}}
+</body>
+
+<template name="reactive_table">
+    <div id="table" class="table table-striped">
+        {{> reactiveTable collection=rows settings=tableSettings class="table"}}
+    </div>
+</template>
